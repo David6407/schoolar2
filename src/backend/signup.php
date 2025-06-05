@@ -1,11 +1,11 @@
 <?php
     
-    include('../..config/database.php');
+    include('../../config/database.php');
 
     $fname=$_POST['f_name'];
     $lname=$_POST['l_name'];
     $email=$_POST['e_mail'];          
-    $passwd=$_POST['passw'];
+    $password=$_POST['passw'];
 
     $enc_pass = md5($passwd);
 

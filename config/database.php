@@ -14,13 +14,12 @@
     $password="unicesmag";
 */
 //Create connection
-
     $conn = pg_connect("
-        host=$host
-        port=$port
-        dbname=$dbname
-        user=$user
-        password=$password        
+        host = $host
+        port = $port
+        dbname = $dbname
+        user = $user
+        password = $password        
     ");
 /*
     if (!$conn){
@@ -29,5 +28,5 @@
         echo "Success connection";
     }
 */
- //   pg_close();
+    pg_close();
 ?>
